@@ -1,0 +1,6 @@
+torchcrf
+transformers
+torch
+scikit-learn
+tqdm
+numpy
