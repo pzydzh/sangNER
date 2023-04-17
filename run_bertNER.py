@@ -39,6 +39,8 @@ train_loader = DataLoader(dataset=train_dataset,
                           collate_fn=collate_fn)
 
 model = BertNERModel(bert_path, HIDDEN_SIZE, NUM_LABELS)
+model.to(device)
+
 model.train()
 
 bert_lr = 5e-5
